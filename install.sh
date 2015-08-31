@@ -16,4 +16,7 @@ if [ "$(uname)" == "Darwin" ]; then
   source osx/set-defaults.sh
 fi
 
+echo "Configuring zsh as default shell"
+chsh -s $(which zsh)
+
 echo "Completed"
