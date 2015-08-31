@@ -9,6 +9,9 @@ echo "Installing dotfiles"
 if [ "$(uname)" == "Darwin" ]; then
   echo "Running OSX installation"
 
+  echo "Brewing it up"
+  source install/brew.sh
+
   echo "Setting defaults on OSX"
   source osx/set-defaults.sh
 fi
