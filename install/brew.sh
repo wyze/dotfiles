@@ -12,12 +12,10 @@ brew install wget
 
 # development tools
 brew install git
-brew install macvim --override-system-vim
+brew install vim --override-system-vim
 brew install reattach-to-user-namespace
 brew install tmux
 brew install zsh
 brew install highlight
 brew install nvm
 brew install z
-
-exit 0
