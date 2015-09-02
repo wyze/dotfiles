@@ -14,6 +14,9 @@ if [ "$(uname)" == "Darwin" ]; then
 
   echo "Setting defaults on OSX"
   source osx/set-defaults.sh
+
+  echo "Installing applications"
+  source install/apps.sh
 fi
 
 echo "Configuring zsh as default shell"
