@@ -30,8 +30,21 @@ if [ "$(uname)" == "Darwin" ]; then
   source install/apps.sh
 fi
 
+ZSH="$(which zsh)"
+SHELLS="/etc/shells"
+
+# Check to make sure we can set the shell
+if ! grep -qs $ZSH $SHELLS
+then
+  echo "Adding zsh to $SHELLS"
+  echo $ZSH | sudo tee -a $SHELLS
+fi
+
 echo "Configuring zsh as default shell"
 chsh -s $(which zsh)
+
+# TEMP!
+touch ~/.zshrc
 
 echo "Completed"
 
