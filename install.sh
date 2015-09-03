@@ -28,6 +28,9 @@ if [ "$(uname)" == "Darwin" ]; then
   echo "Setting defaults on OSX"
   source osx/set-defaults.sh
 
+  echo "Installing Node via nvm"
+  source install/node.sh
+
   echo "Installing applications"
   source install/apps.sh
 fi
