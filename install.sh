@@ -17,6 +17,8 @@ done &> /dev/null &
 
 echo "Installing dotfiles"
 
+source install/link.sh
+
 if [ "$(uname)" == "Darwin" ]; then
   echo "Running OSX installation"
 
