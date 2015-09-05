@@ -31,9 +31,17 @@ if [ "$(uname)" == "Darwin" ]; then
   echo "Installing Node via nvm"
   source install/node.sh
 
+  echo "Installing Prezto"
+  source install/prezto.sh
+
   echo "Installing applications"
   source install/apps.sh
 fi
+
+cp fonts/* ~/Library/Fonts
+
+# iTerm 2 settings
+cp com.googlecode.iterm2.plist ~/Library/Preferences/
 
 ZSH="$(which zsh)"
 SHELLS="/etc/shells"
@@ -47,9 +55,6 @@ fi
 
 echo "Configuring zsh as default shell"
 chsh -s $(which zsh)
-
-# TEMP!
-touch ~/.zshrc
 
 echo "Completed"
 

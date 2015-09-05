@@ -1,0 +1,39 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+PROJECTS="~/Projects"
+
+# Projects (Overall)
+alias proj="cd $PROJECTS"
+alias ext="cd $PROJECTS/external"
+alias pers="cd $PROJECTS/personal"
+alias squat="cd $PROJECTS/squatters"
+alias swift="cd $PROJECTS/swift"
+
+# Projects (Specific)
+alias budg="cd $PROJECTS/personal/budgify"
+alias seti="cd $PROJECTS/personal/seti-icons"
+
+# Docker
+export DOCKER_HOST=tcp://localhost:4243
+export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+
+# Tmux
+alias ta='tmux attach -t'
+alias tkss='tmux kill-session -t'
+alias tksv='tmux kill-server'
+alias tl='tmux list-sessions'
+alias ts='tmux new-session -s'
+
+# z
+source $(brew --prefix)/etc/profile.d/z.sh
