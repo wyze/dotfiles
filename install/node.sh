@@ -4,8 +4,8 @@
 source $(brew --prefix nvm)/nvm.sh
 
 # get all my node in here <3
-nvm install iojs
 nvm install 0.10
+nvm install 0.12
 nvm install stable
 
 # alias our default instance
