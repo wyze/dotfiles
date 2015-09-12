@@ -10,23 +10,15 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Source localrc
+if [[ -s "~/.localrc" ]]; then
+  source "~/.localrc"
+fi
+
 PROJECTS="~/Projects"
 
 # Projects (Overall)
 alias proj="cd $PROJECTS"
-alias ext="cd $PROJECTS/external"
-alias pers="cd $PROJECTS/personal"
-alias squat="cd $PROJECTS/squatters"
-alias swift="cd $PROJECTS/swift"
-
-# Projects (Specific)
-alias budg="cd $PROJECTS/personal/budgify"
-alias seti="cd $PROJECTS/personal/seti-icons"
-
-# Docker
-export DOCKER_HOST=tcp://localhost:4243
-export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
 
 # Tmux
 alias ta='tmux attach -t'
