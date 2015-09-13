@@ -4,12 +4,11 @@
 source $(brew --prefix nvm)/nvm.sh
 
 # get all my node in here <3
-nvm install 0.10
-nvm install 0.12
 nvm install stable
+nvm install 0.12
 
 # alias our default instance
-nvm alias default stable
+nvm alias default 0.12
 
 # some global packages
-npm i -g pure-prompt npm-check-updates
+npm i -g npm-check-updates
