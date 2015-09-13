@@ -1,10 +1,7 @@
 #!/bin/sh
 
-DOTFILES=$HOME/.dotfiles
-
 echo "Creating symlinks"
-linkables=$( find -H "$DOTFILES" -maxdepth 3 -name '*.symlink' )
-for file in $linkables ; do
+for file in ~/.dotfiles/{vim,zsh}/*.symlink; do
     target="$HOME/.$( basename $file ".symlink" )"
     echo "Creating symlink for $file"
     ln -s $file $target
