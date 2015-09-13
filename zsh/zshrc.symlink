@@ -29,3 +29,6 @@ alias ts='tmux new-session -s'
 
 # z
 source $(brew --prefix)/etc/profile.d/z.sh
+
+# Update
+alias upprez='pushd . && cd ~/.zprezto && gfm && gSI && popd'
