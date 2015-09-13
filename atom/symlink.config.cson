@@ -1,0 +1,55 @@
+"*":
+  "exception-reporting":
+    userId: "72594466-5488-d29a-99eb-b9c3a2cdbe78"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "0b44e3897de1266d005eeb2beb46758ca33fb010"
+  editor:
+    fontFamily: "DroidSansMonoSlashed"
+    showInvisibles: true
+    showIndentGuide: true
+    scrollPastEnd: true
+    invisibles: {}
+    fontSize: 15
+  core:
+    themes: [
+      "one-dark-ui"
+      "tomorrow-night-eighties-syntax"
+    ]
+  zentabs:
+    neverCloseUnsaved: true
+  "tabs-to-spaces":
+    onSave: "untabify"
+  react: {}
+  linter: {}
+  "atom-alignment":
+    alignBy: [
+      ":="
+      ":"
+      "="
+      "from"
+    ]
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  "travis-ci-status": {}
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+  pigments: {}
+  "highlight-selected": {}
+  "px-to-em":
+    Comment: false
+    Unit: "rem"
+  "seti-icons":
+    iconsPlus: true
+  wakatime:
+    apikey: "f6f11f84-a183-4415-88b2-1e361eddfd45"
+    ignore: [
+      "^/var/"
+      "^/tmp/"
+      "^/private/"
+      "COMMIT_EDITMSG$"
+      "PULLREQ_EDITMSG$"
+      "MERGE_MSG$"
+    ]
