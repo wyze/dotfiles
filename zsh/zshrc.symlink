@@ -21,6 +21,9 @@ export EDITOR="$VISUAL"
 
 PROJECTS="~/Projects"
 
+# cd
+alias dot="cd ~/.dotfiles"
+
 # Projects (Overall)
 alias proj="cd $PROJECTS"
 
