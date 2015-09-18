@@ -6,12 +6,12 @@
   metrics:
     userId: "0b44e3897de1266d005eeb2beb46758ca33fb010"
   editor:
-    fontFamily: "DroidSansMonoSlashed"
     showInvisibles: true
     showIndentGuide: true
     scrollPastEnd: true
     invisibles: {}
     fontSize: 15
+    fontFamily: "DroidSansMonoDotted"
   core:
     themes: [
       "one-dark-ui"
