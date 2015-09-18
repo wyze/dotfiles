@@ -11,4 +11,4 @@ nvm install 0.12
 nvm alias default 0.12
 
 # some global packages
-npm i -g npm-check-updates
+npm i -g npm npm-check-updates
