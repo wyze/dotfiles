@@ -1,0 +1,30 @@
+{
+  ".source.js":
+    "React: class skeleton":
+      prefix: "rcd"
+      body: "import React, { Component, PropTypes } from 'react';\n\nexport default class $1 extends Component {\n\trender() {\n\t\t$2\n\t}\n}\n"
+
+    "React: static propTypes":
+      prefix: "spt"
+      body: "static propTypes = {\n\t${1}: PropTypes.${2:object}.isRequired,\n}\n"
+
+    "React: shouldComponentUpdate === false":
+      prefix: "scuf"
+      body: "shouldComponentUpdate = () => false\n"
+
+    "React: shouldComponentUpdate( nextProps )":
+      prefix: "scup"
+      body: "shouldComponentUpdate = nextProps => \n\t"
+
+    "React: shouldComponentUpdate( nextProps, nextState )":
+      prefix: "scus"
+      body: "shouldComponentUpdate = ( nextProps, nextState ) => \n\t"
+
+    "React: const { ... } = this.props":
+      prefix: "props6"
+      body: "const { ${1} } = this.props;"
+
+    "ES6: export default from":
+      prefix: "edf"
+      body: "export default from './$1';\n"
+}
