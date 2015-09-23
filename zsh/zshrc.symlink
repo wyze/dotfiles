@@ -23,6 +23,7 @@ PROJECTS="~/Projects"
 
 # cd
 alias dot="cd ~/.dotfiles"
+alias cdc="cd ~ && clear"
 
 # Projects (Overall)
 alias proj="cd $PROJECTS"
