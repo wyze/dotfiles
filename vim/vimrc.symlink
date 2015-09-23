@@ -1,0 +1,24 @@
+" Leggo
+
+" Load the Vundle
+source ~/.vim/plugins.vim
+
+set nocompatible
+
+let mapleader=" "
+set noswapfile
+set autoindent
+set smartindent
+set hidden
+syntax enable
+
+set laststatus=2
+set t_Co=256
+
+set encoding=utf-8
+set ttimeoutlen=50
+
+" Airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'badwolf'
