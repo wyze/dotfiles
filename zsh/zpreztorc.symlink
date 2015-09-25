@@ -35,6 +35,7 @@ zstyle ':prezto:load' pmodule \
   'node' \
   'ssh' \
   'syntax-highlighting' \
+  'history-substring-search' \
   'completion' \
   'prompt'
 
