@@ -25,6 +25,10 @@ PROJECTS="~/Projects"
 alias dot="cd ~/.dotfiles"
 alias cdc="cd ~ && clear"
 
+# NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # Projects (Overall)
 alias proj="cd $PROJECTS"
 
