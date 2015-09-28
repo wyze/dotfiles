@@ -18,9 +18,13 @@ $APM install                     \
   advanced-open-file             \
   atom-alignment                 \
   highlight-selected             \
+  language-applescript           \
+  language-tmux                  \
+  language-viml                  \
   line-ending-converter          \
   linter                         \
   linter-eslint                  \
+  pain-split                     \
   pigments                       \
   react                          \
   seti-icons                     \
