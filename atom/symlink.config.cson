@@ -53,3 +53,5 @@
       "PULLREQ_EDITMSG$"
       "MERGE_MSG$"
     ]
+  "autocomplete-plus":
+    enableAutoActivation: false
