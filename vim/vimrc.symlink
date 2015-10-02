@@ -8,7 +8,6 @@ set nocompatible
 let mapleader=" "
 set noswapfile
 set autoindent
-set smartindent
 set hidden
 syntax enable
 
