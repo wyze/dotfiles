@@ -27,4 +27,8 @@
     "ES6: export default from":
       prefix: "edf"
       body: "export default from './$1';\n"
+
+    "Redux: FSA constants":
+      prefix: "fsa"
+      body: "const ${1} = '${2}/${1}';\nconst ${1}_FAIL = '${2}/${1}_FAIL';\nconst ${1}_SUCCESS = '${2}/${1}_SUCCESS';\n"
 }
