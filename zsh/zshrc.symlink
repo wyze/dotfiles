@@ -43,6 +43,6 @@ alias ts='tmux new-session -s'
 source $(brew --prefix)/etc/profile.d/z.sh
 
 # Update
-alias upprez='pushd . && cd ~/.zprezto && gfm && gSI && popd'
+alias upprez='cd ~/.zprezto && gfm && gSI && cd -'
 alias updot='cd ~/.dotfiles && gfr && cd -'
 alias src='source ~/.zshrc'
