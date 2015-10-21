@@ -58,3 +58,6 @@
     enableAutoActivation: false
   "language-elm":
     elmOraclePath: "/usr/local/opt/nvm/versions/node/v0.12.7/bin/elm-oracle"
+".coffee.jsx.source":
+  editor:
+    tabLength: 4
