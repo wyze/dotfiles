@@ -22,8 +22,7 @@
   "tabs-to-spaces":
     onSave: "untabify"
   react: {}
-  linter:
-    lintOnFly: false
+  linter: {}
   "atom-alignment":
     alignBy: [
       ":="
