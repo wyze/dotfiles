@@ -31,6 +31,9 @@ alias cdc="cd ~ && clear"
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# npm
+alias ni='npm i'
+
 # Projects (Overall)
 alias proj="cd $PROJECTS"
 
