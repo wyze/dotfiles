@@ -24,16 +24,8 @@
   react: {}
   linter:
     lintOnFly: false
-  "atom-alignment":
-    alignBy: [
-      ":="
-      ":"
-      "="
-      "from"
-    ]
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   "travis-ci-status": {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true

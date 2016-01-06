@@ -16,7 +16,6 @@ git clone https://github.com/atom/atom.git $ATOM_DIR &&                      \
 APM=/Applications/Atom.app/Contents/Resources/app/apm/node_modules/.bin/apm
 $APM install                     \
   advanced-open-file             \
-  atom-alignment                 \
   highlight-selected             \
   language-applescript           \
   language-tmux                  \
