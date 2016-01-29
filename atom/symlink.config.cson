@@ -11,7 +11,7 @@
     scrollPastEnd: true
     invisibles: {}
     fontSize: 15
-    fontFamily: "DroidSansMonoDotted"
+    fontFamily: "Hack"
   core:
     themes: [
       "one-dark-ui"
