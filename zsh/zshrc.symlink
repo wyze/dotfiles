@@ -41,6 +41,7 @@ alias nit='npm install && npm test'
 alias nk='npm link'
 alias nr='npm run'
 alias nf='npm cache clean && rm -rf node_modules && npm install'
+alias nrd='npm run dev'
 
 # Projects (Overall)
 alias proj="cd $PROJECTS"
