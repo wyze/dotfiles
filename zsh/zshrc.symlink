@@ -43,6 +43,9 @@ alias nr='npm run'
 alias nf='npm cache clean && rm -rf node_modules && npm install'
 alias nrd='npm run dev'
 alias nu='npm uninstall'
+alias nus='npm uninstall --save'
+alias nud='npm uninstall --save-dev'
+alias nug='npm uninstall --global'
 
 # Projects (Overall)
 alias proj="cd $PROJECTS"
