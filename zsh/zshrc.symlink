@@ -22,6 +22,7 @@ export EDITOR="$VISUAL"
 PROJECTS="~/Projects"
 
 alias release="release-it"
+alias agrep='alias | grep'
 
 # cd
 alias dot="cd ~/.dotfiles"
