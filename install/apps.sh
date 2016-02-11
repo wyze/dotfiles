@@ -16,16 +16,17 @@ git clone https://github.com/atom/atom.git $ATOM_DIR &&                      \
 APM=/Applications/Atom.app/Contents/Resources/app/apm/node_modules/.bin/apm
 $APM install                     \
   advanced-open-file             \
+  editorconfig                   \
   highlight-selected             \
-  language-applescript           \
-  language-tmux                  \
+  language-babel                 \
+  language-elm                   \
+  language-haskell               \
   language-viml                  \
   line-ending-converter          \
   linter                         \
   linter-eslint                  \
   pain-split                     \
   pigments                       \
-  react                          \
   seti-icons                     \
   tabs-to-spaces                 \
   tomorrow-night-eighties-syntax \
