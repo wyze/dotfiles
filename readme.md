@@ -4,4 +4,4 @@
 
 ## License
 
-MIT © [Neil Kistner](//github.com/wyze)
+MIT © 2015-2016 [Neil Kistner](//github.com/wyze)
