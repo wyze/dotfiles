@@ -11,7 +11,7 @@
     scrollPastEnd: true
     invisibles: {}
     fontSize: 15
-    fontFamily: "Hack"
+    fontFamily: "\"Fira Code\""
   core:
     themes: [
       "one-dark-ui"
