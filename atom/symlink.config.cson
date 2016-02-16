@@ -1,41 +1,42 @@
 "*":
-  "exception-reporting":
-    userId: "72594466-5488-d29a-99eb-b9c3a2cdbe78"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "0b44e3897de1266d005eeb2beb46758ca33fb010"
-  editor:
-    showInvisibles: true
-    showIndentGuide: true
-    scrollPastEnd: true
-    invisibles: {}
-    fontSize: 15
-    fontFamily: "\"Fira Code\""
+  "autocomplete-plus":
+    enableAutoActivation: false
   core:
     themes: [
       "one-dark-ui"
       "tomorrow-night-eighties-syntax"
     ]
-  zentabs:
-    neverCloseUnsaved: true
-  "tabs-to-spaces":
-    onSave: "untabify"
-  react: {}
+  editor:
+    fontFamily: "\"Fira Code\""
+    fontSize: 15
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "72594466-5488-d29a-99eb-b9c3a2cdbe78"
+  "gist-it":
+    newGistsDefaultToPrivate: true
+  "highlight-selected": {}
+  "language-babel":
+    autoIndentJSX: true
+  "language-elm":
+    elmOraclePath: "/usr/local/opt/nvm/versions/node/v0.12.7/bin/elm-oracle"
   linter:
+    errorPanelHeight: 48
     lintOnFly: false
-  "tree-view":
-    hideIgnoredNames: true
-  "travis-ci-status": {}
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
+  metrics:
+    userId: "0b44e3897de1266d005eeb2beb46758ca33fb010"
+  "one-dark-ui": {}
   pigments: {}
-  "highlight-selected": {}
-  "px-to-em":
-    Comment: false
-    Unit: "rem"
   "seti-icons":
     iconsPlus: true
+  "tabs-to-spaces": {}
+  "travis-ci-status": {}
+  "tree-view":
+    hideIgnoredNames: true
   wakatime:
     apikey: "f6f11f84-a183-4415-88b2-1e361eddfd45"
     ignore: [
@@ -46,10 +47,11 @@
       "PULLREQ_EDITMSG$"
       "MERGE_MSG$"
     ]
-  "autocomplete-plus":
-    enableAutoActivation: false
-  "language-elm":
-    elmOraclePath: "/usr/local/opt/nvm/versions/node/v0.12.7/bin/elm-oracle"
+  welcome:
+    showOnStartup: false
+  zentabs:
+    neverCloseNew: true
+    neverCloseUnsaved: true
 ".coffee.jsx.source":
   editor:
     tabLength: 4
