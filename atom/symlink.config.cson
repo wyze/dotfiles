@@ -8,7 +8,7 @@
     ]
   editor:
     fontFamily: "\"Fira Code\""
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -18,8 +18,7 @@
   "gist-it":
     newGistsDefaultToPrivate: true
   "highlight-selected": {}
-  "language-babel":
-    autoIndentJSX: true
+  "language-babel": {}
   "language-elm":
     elmOraclePath: "/usr/local/opt/nvm/versions/node/v0.12.7/bin/elm-oracle"
   linter:
