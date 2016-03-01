@@ -17,9 +17,6 @@ echo "Installing Homebrew packages"
 brew tap phinze/homebrew-cask
 brew install brew-cask
 
-# font
-brew cask install caskroom/fonts/font-hack
-
 # cli tools
 brew install htop
 brew install wget
