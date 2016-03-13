@@ -49,7 +49,6 @@
   welcome:
     showOnStartup: false
   zentabs:
-    neverCloseNew: true
     neverCloseUnsaved: true
 ".coffee.jsx.source":
   editor:
