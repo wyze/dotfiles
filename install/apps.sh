@@ -25,7 +25,6 @@ $APM install                     \
   line-ending-converter          \
   linter                         \
   linter-eslint                  \
-  pain-split                     \
   pigments                       \
   seti-icons                     \
   tabs-to-spaces                 \
@@ -36,5 +35,6 @@ $APM install                     \
 
 # Link Atom config
 ln -s ~/.dotfiles/atom/symlink.config.cson ~/.atom/config.cson
+ln -s ~/.dotfiles/atom/symlink.keymap.cson ~/.atom/keymap.cson
 ln -s ~/.dotfiles/atom/symlink.snippets.cson ~/.atom/snippets.cson
 ln -s ~/.dotfiles/atom/symlink.styles.less ~/.atom/styles.less
