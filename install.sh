@@ -36,9 +36,10 @@ if [ "$(uname)" == "Darwin" ]; then
 
   echo "Installing applications"
   source install/apps.sh
-fi
 
-cp fonts/* ~/Library/Fonts
+  echo "Installing Fira Code"
+  source install/firacode.sh
+fi
 
 # iTerm 2 settings
 cp com.googlecode.iterm2.plist ~/Library/Preferences/
