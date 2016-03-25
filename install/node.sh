@@ -11,4 +11,4 @@ nvm install 4 # LTS
 nvm alias default 5
 
 # some global packages
-npm i -g npm npm-check-updates np
+npm i -g npm@next npm-check-updates np
