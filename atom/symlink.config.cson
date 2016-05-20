@@ -4,7 +4,7 @@
   core:
     themes: [
       "one-dark-ui"
-      "tomorrow-night-eighties-syntax"
+      "hybrid-next-syntax"
     ]
   editor:
     fontFamily: "\"Fira Code\""
