@@ -79,3 +79,6 @@ source $(brew --prefix)/etc/profile.d/z.sh
 alias upprez='cd ~/.zprezto && gfm && gSI && cd -'
 alias updot='cd ~/.dotfiles && gfr && cd -'
 alias src='source ~/.zshrc'
+
+# HyperTerm
+alias ht='vim ~/.hyperterm.js'
