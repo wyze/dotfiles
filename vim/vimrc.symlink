@@ -1,6 +1,6 @@
 " Leggo
 
-" Load the Vundle
+" Load the Plug
 source ~/.vim/plugins.vim
 
 set nocompatible
@@ -17,7 +17,36 @@ set t_Co=256
 set encoding=utf-8
 set ttimeoutlen=50
 
+colorscheme hybrid
+set background=dark
+
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'badwolf'
+
+" NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+map <C-n> :NERDTreeToggle<CR>
+
+" Syntastic
+let s:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
+let b:syntastic_javascript_eslint_exec = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+
+" indentGuide
+let g:indentLine_leadingSpaceEnabled=1
+let g:indentLine_leadingSpaceChar = '·'
+
+" Disable Arrow Keys
+nnoremap <up>    <nop>
+nnoremap <down>  <nop>
+nnoremap <left>  <nop>
+nnoremap <right> <nop>
+inoremap <up>    <nop>
+inoremap <down>  <nop>
+inoremap <left>  <nop>
+inoremap <right> <nop>
