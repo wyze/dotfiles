@@ -82,3 +82,7 @@ alias src='source ~/.zshrc'
 
 # HyperTerm
 alias ht='vim ~/.hyperterm.js'
+
+# vim
+alias vrc='vim ~/.vimrc'
+alias vplug='vim ~/.vim/plugins.vim'
