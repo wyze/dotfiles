@@ -17,12 +17,14 @@ Plug 'w0ng/vim-hybrid'
 
 " Toolbelt
 Plug 'bling/vim-airline'
+Plug 'chrisbra/vim-show-whitespace'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdtree'
+Plug 'umutcoskun/vim-whitespaces'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
-Plug 'yggdroot/indentline'
 
 call plug#end()
 filetype plugin indent on
