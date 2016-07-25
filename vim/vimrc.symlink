@@ -11,6 +11,9 @@ set autoindent
 set hidden
 syntax enable
 
+set ts=2
+set sw=2
+
 set laststatus=2
 set t_Co=256
 
@@ -40,6 +43,17 @@ let g:syntastic_javascript_checkers = ['eslint']
 " indentGuide
 let g:indentLine_leadingSpaceEnabled=1
 let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_showFirstIndentLevel=1
+let g:indentLine_conceallevel=2
+
+" whitespaces
+let whitespaces_autostrip = 1
+
+" show-whitespace
+autocmd VimEnter * ShowWhiteToggle
+
+" Indent Guides
+let g:indent_guides_guide_size = 1
 
 " Disable Arrow Keys
 nnoremap <up>    <nop>
