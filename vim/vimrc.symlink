@@ -11,8 +11,7 @@ set autoindent
 set hidden
 syntax enable
 
-set ts=2
-set sw=2
+set nu relativenumber
 
 set laststatus=2
 set t_Co=256
@@ -26,19 +25,34 @@ set background=dark
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'badwolf'
+let g:airline_theme = 'wombat'
 
 " NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-map <C-n> :NERDTreeToggle<CR>
+map \ :NERDTreeToggle<CR>
 
 " Syntastic
-let s:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
-let b:syntastic_javascript_eslint_exec = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
+
+" Match vim-hybrid theme
+hi link SyntasticErrorSign Constant
+
+" Syntastic doesn't load ESLint as a checker from NERDTree
+function! s:setupESLint() abort
+  let s:eslint_path = system('PATH=$(npm bin):$PATH && which eslint')
+  let b:syntastic_javascript_eslint_exec = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+endfunction
+
+autocmd BufReadPost * call s:setupESLint()
 
 " indentGuide
 let g:indentLine_leadingSpaceEnabled=1
@@ -55,6 +69,9 @@ autocmd VimEnter * ShowWhiteToggle
 " Indent Guides
 let g:indent_guides_guide_size = 1
 
+" Rainbow
+let g:rainbow_active = 1
+
 " Disable Arrow Keys
 nnoremap <up>    <nop>
 nnoremap <down>  <nop>
@@ -64,3 +81,7 @@ inoremap <up>    <nop>
 inoremap <down>  <nop>
 inoremap <left>  <nop>
 inoremap <right> <nop>
+
+" Buffers
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
