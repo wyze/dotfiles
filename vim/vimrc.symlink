@@ -11,6 +11,8 @@ set autoindent
 set hidden
 syntax enable
 
+set sw=2 sts=2 sw=2 et
+
 set nu relativenumber
 
 set laststatus=2
