@@ -16,11 +16,11 @@ Plug 'mhartington/oceanic-next'
 Plug 'w0ng/vim-hybrid'
 
 " Toolbelt
+Plug 'adonis0147/prettyGuides'
 Plug 'bling/vim-airline'
 Plug 'chrisbra/vim-show-whitespace'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'luochen1990/rainbow'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'raimondi/delimitmate'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
