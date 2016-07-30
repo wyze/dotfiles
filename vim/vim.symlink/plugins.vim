@@ -7,6 +7,7 @@ Plug 'scrooloose/syntastic'
 
 " Languages
 Plug 'elmcast/elm-vim'
+Plug 'mitsuhiko/vim-json'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 
