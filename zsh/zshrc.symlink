@@ -27,6 +27,9 @@ alias agrep='alias | grep'
 alias dot="cd ~/.dotfiles"
 alias cdc="cd ~ && clear"
 
+# Git
+alias guf='gf upstream master && gr upstream/master && gp'
+
 # NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
